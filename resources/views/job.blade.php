@@ -3,9 +3,12 @@
 @section('content')
 
 <div class="container mt-5">
-    @foreach ($jobs as $job)
-        <p><a href="job/{{$job['id']}}" class="text-white"><strong class="text-primary">{{$job['title']}}:</strong> pays {{$job['salary']}} <i>per year</i></a></p>
-    @endforeach
+    <h2 class="text-primary">
+    {{ $travail['title']}}:
+    </h2>
+    <p class="text-white">
+        {{$travail['salary']}}&dollar;
+    </p>
 </div>
 
 @endsection
