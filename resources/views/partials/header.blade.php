@@ -3,7 +3,7 @@
     class="nav justify-content-evenly  "
 >
     <li class="nav-item">
-        <a class="nav-link active" href="#" aria-current="page"
+        <a class="nav-link active" href="/" aria-current="page"
             >Home</a
         >
     </li>
