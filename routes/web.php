@@ -33,7 +33,7 @@ Route::get('/', function () {
     return view('index' , [
         'jobs' => Job::all()
     ]);
-});
+})->name('home');
 
 Route::get('/job/{id}', function($id){
     // $travail = Arr::first(Job::all(), fn($job) => $job['id'] == $id);
@@ -42,3 +42,9 @@ Route::get('/job/{id}', function($id){
 
     return view('job' , compact('travail'));
 });
+
+
+Route::get('/about', function ()
+{
+    return view('about');
+})->name('about');
